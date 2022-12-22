@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/DodgerBlue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="#F1FEFF"
+        android:id="@+id/table_list">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:hint="Entrez votre recherche"
+            android:minHeight="48dp" />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_toRightOf="@+id/input"
+            android:id="@+id/img_search_deca"
+            android:layout_marginLeft="7sp"
+            android:src="@drawable/decathlon"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_search_marmiton"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="51dp"
+            android:layout_toRightOf="@+id/input"
+            android:src="@drawable/marmiton"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="376dp"
+        android:layout_height="453dp"
+        android:layout_below="@+id/table_list"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="7dp"
+        android:divider="@color/AliceBlue"
+        android:dividerHeight="8.0sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+
+</RelativeLayout>
